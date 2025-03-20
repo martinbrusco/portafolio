@@ -259,3 +259,166 @@ h1 {
 .articulos .card-header{
     font-weight: bold;
 }
+
+
+/*  TESTIMONIOS  */
+
+.testimonios{
+    padding: 40px 40px 80px 40px;
+}
+
+.testimonios .carousel{
+    max-width: 800px;
+}
+
+
+
+
+.carousel-item img {
+    max-height: 100%;
+    width: auto; /* Mantiene la proporción */
+    object-fit: contain; /* Evita cortes en las imágenes */
+} 
+/* TESTIMONIOS */
+
+
+ .carousel-item {
+    height: 500px; 
+    
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.6s ease-in-out !important; /* Suavizar transición */
+    
+} 
+
+.carousel-item img {
+
+        width: 100%; /* Asegura que ocupe todo el ancho */
+        height: 400px; /* Ajusta la altura según necesites */
+        object-fit: cover; /* Recorta la imagen para llenar el espacio sin deformarse */
+    
+    
+}
+
+/* TESTIMONIOS - Carrusel */
+.carousel {
+    max-width: 800px; /* Ancho máximo del carrusel */
+    margin: 0 auto; /* Centrar el carrusel */
+}
+
+
+
+.object-fit-cover {
+    object-fit: cover; /* Cubrir espacio sin distorsión */
+    object-position: center; /* Centrar imagen */
+}
+
+
+/* CONTACTO */
+
+.contacto .container {
+    max-width: 1100px;
+    min-height: 200px;
+    padding: 20px;
+}
+
+.contacto .rectangulo{
+    margin-top: -5rem;
+    background-color: rgb(13, 110, 253);
+    border-radius: 10px;
+    box-shadow: 0px 1px 4px 1px white;
+}
+
+.contacto .row{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.contacto .descripcion{
+    color: white;
+    font-size: 1.2rem;
+}
+
+.contacto button{
+    color: white;
+    font-weight: bold;
+    background-color: transparent;
+    border:2px solid white;
+    padding: 1.25em 2em;
+    margin: 10px;
+    border-radius: 100px;
+    transition: all 0.2s ease-in-out;
+}
+
+.contacto button i{
+    color: aliceblue;
+    font-size: 1.3rem;
+    transition: all 0.2s ease-in-out;
+}
+
+
+.contacto button:hover{
+    background-color: #f5f6f7;
+    color: black;
+}
+
+.contacto button:hover i{
+    color: black;
+}
+
+/* pie de pagina */
+
+footer{
+    min-height: 25px;
+}
+
+.footer-logo{
+    height: 80px;
+    width: 80px;
+    margin:10px
+}
+
+.footer-text{
+    font-size: 1.5rem;
+    padding: 20px;
+    margin-bottom: 30px;
+    font-family: "Quicksand", sans-serif;
+}
+
+.iconos-redes-sociales a{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    margin: 2px;
+    border:2px solid;
+    border-color: #f5f6f7;
+    border-radius: 50%;
+    transition: all 0.2s ease-in-out;
+}
+
+.iconos-redes-sociales i{
+    color: #f5f6f7;
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.iconos-redes-sociales a:hover{
+    background-color:  #f5f6f7;
+    border: 2px solid rgb(13, 110, 253);
+}
+
+
+.iconos-redes-sociales a:hover i{
+    color:#2c3e50
+    
+}
+
+.derechos-autor{
+    font-size: 15px;
+    color: #aeaeae;
+    padding: 20px;
+}
