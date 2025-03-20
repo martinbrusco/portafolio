@@ -1,0 +1,92 @@
+/* NAVBAR */
+.navbar {
+    padding: 2rem;
+    background-color: #f5f6f7;
+}
+
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* ESTILOS GENERALES */
+section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* PRESENTACIÓN */
+h1 {
+    font-size: 2.5rem; 
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+ .seccion-oscura{
+    background-color: black;
+    color: #f5f6f7;
+ }
+
+ .sobre-mi{
+    height: 500px;
+    padding: 10px;
+ }
+
+ .sobre-mi .contenedor{
+    max-width: 600px;
+    text-align: center;
+
+
+ }
+
+.principal-hero h2 {
+    font-size: 1.5rem;
+    color: #615151;
+}
+
+/* SECCIÓN HERO */
+.hero {
+    background-color: #f5f6f7;
+    min-height: 450px;
+    text-align: center;
+}
+
+/* HERO PRINCIPAL */
+.principal-hero {
+    padding: 3rem;
+}
+
+/* IMAGEN PRINCIPAL (Redonda y con tamaño fijo) */
+.hero-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 20px;
+}
+
+/* IMAGEN SECUNDARIA (Tamaño adaptable) */
+.hero-inferior-imagen {
+    max-width: 400px; /* Controla el tamaño máximo */
+    width: 100%; /* Se adapta al contenedor */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Imagen secundaria en pantallas grandes */
+@media screen and (min-width: 700px) {
+    .hero-inferior-imagen {
+        max-width: 600px;
+    }
+}
+
+/* ADAPTABLE RESPONSIVO */
+@media screen and (max-width: 767px) {
+    .navbar-brand {
+        display: none;
+    }
+}
