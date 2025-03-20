@@ -17,12 +17,19 @@ section {
     justify-content: center;
 }
 
+.btn-primary{
+
+    font-size: 1.2rem;
+    margin: 20px;
+}
+
 /* PRESENTACIÓN */
 h1 {
     font-size: 2.5rem; 
     font-family: "Boldonse", system-ui;
     font-weight: 400;
     font-style: normal;
+    color:#615151;
 }
 
  .seccion-oscura{
@@ -38,9 +45,25 @@ h1 {
  .sobre-mi .contenedor{
     max-width: 600px;
     text-align: center;
-
-
  }
+
+ .seccion-titulo{
+    font-size: 2rem;
+    padding: 15px 0;
+    font-family: "Boldonse", cursive;
+ }
+
+ .seccion-texto{
+    font-size: 1.2rem;
+ }
+
+
+
+.seccion-clara{
+    color:#615151;
+    background-color: #f5f6f7;
+    
+}
 
 .principal-hero h2 {
     font-size: 1.5rem;
@@ -89,4 +112,150 @@ h1 {
     .navbar-brand {
         display: none;
     }
+}
+
+@media screen and (max-width: 400px) {
+    .overlay p {
+        font-size: 18px;
+    }
+
+    .overlay i{
+        font-size: 40px;
+    }
+}
+
+
+
+
+
+
+
+
+/* EXPERIENCIA */
+.experiencia {
+    padding: 80px 20px;
+    
+}
+
+.seccion-titulo {
+    font-family: "Boldonse", cursive;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.columna {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    padding: 25px !important;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+}
+
+.columna:hover {
+    transform: translateY(-10px);
+}
+
+.bi-code-square, 
+.bi-journal, 
+.bi-mortarboard {
+    font-size: 3rem !important;
+    color: #2c3e50 !important;
+    margin-bottom: 1rem;
+}
+
+.experiencia-titulo {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.8rem;
+    margin: 15px 0;
+}
+
+.badges-contenedor {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: auto;
+}
+
+.badge {
+    font-size: 0.9rem !important;
+    padding: 8px 15px !important;
+    border-radius: 20px !important;
+    font-weight: 500 !important;
+}
+
+/* PROYECTO */
+.proyecto {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    width: 80%; /* Ajusta el tamaño de la imagen */
+    margin: auto; /* Centra el contenedor */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    margin-top: 30PX;
+}
+
+.proyecto img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    opacity: 0.8; /* Agrega transparencia a la imagen */
+    
+}
+
+.proyecto:hover {
+    transform: translateY(-10px);
+    
+    
+}
+.proyecto:hover img {
+    opacity: 0.6; /* Aumenta la transparencia al pasar el mouse */
+}
+.proyecto .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background: rgba(0, 0, 0, 0.6); */
+    color: #2c3e50 ;
+    padding: 10px 20px;
+    border-radius: 5px;
+    opacity: 1; /* Siempre visible */
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.overlay .iconos-contenedor{
+    display: flex;
+}
+
+.overlay i{
+    color: black;
+    font-size: 40px;
+    margin: 10px;
+}
+
+/* ARTICULOS */
+.articulos{
+    min-height: 500px;
+    padding: 30px;
+    background-color: #f5f6f7;
+}
+
+.articulos .card{
+    width: 80%;
+    max-width: 600px;
+    margin: 20px;
+}
+
+.articulos .card-header{
+    font-weight: bold;
 }
